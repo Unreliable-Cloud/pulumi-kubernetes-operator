@@ -10,8 +10,8 @@ spec:
         - name: pulumi-kubernetes-operator
           resources:
             limits:
-              cpu: 200m
-              memory: 200Mi
+              cpu: 100m
+              memory: 500Mi
             requests:
               cpu: 100m
-              memory: 100Mi
+              memory: 300Mi
