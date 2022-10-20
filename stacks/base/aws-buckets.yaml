@@ -4,16 +4,16 @@ metadata:
   name: buckets
 spec:
   envRefs:
-    DATADOG_APP_KEY:
-      type: Secret
-      secret:
-        name: datadog-api-key
-        key: appKey
-    DATADOG_API_KEY:
-      type: Secret
-      secret:
-        name: datadog-api-key
-        key: apiKey
+   # DATADOG_APP_KEY:
+   #   type: Secret
+   #   secret:
+   #     name: datadog-api-key
+   #     key: appKey
+   # DATADOG_API_KEY:
+   #   type: Secret
+   #   secret:
+   #     name: datadog-api-key
+   #     key: apiKey
     AWS_SECRET_ACCESS_KEY:
       type: Secret
       secret:
