@@ -1,0 +1,10 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pulumi-kubernetes-operator
+spec:
+  template:
+    metadata:
+     annotations:
+       ad.datadoghq.com/pulumi-kubernetes-operator.logs: '[{"source": "kubernetes", "service": "pulumi-operator"}]'

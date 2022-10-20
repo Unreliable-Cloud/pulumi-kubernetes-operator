@@ -5,6 +5,9 @@ patches:
 - path: patches/operator-resources.yaml
   target:
     kind: Deployment
+- path: patches/datadog-annotations-operator.yaml
+  target:
+    kind: Deployment
 
 bases:
 - ../../crds
