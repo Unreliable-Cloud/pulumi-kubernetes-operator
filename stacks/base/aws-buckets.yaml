@@ -1,0 +1,15 @@
+apiVersion: pulumi.com/v1
+kind: Stack
+metadata:
+  name: buckets
+spec:
+  envRefs:
+    PULUMI_ACCESS_TOKEN:
+      type: Secret
+      secret:
+        name: pulumi-api-secret
+        key: accessToken
+  stack: youvegotmoxie/buckets/us-east-1
+  projectRepo: https://github.com/Unreliable-Cloud/pulumi-aws-buckets
+  branch: "refs/heads/master"
+  destroyOnFinalize: true
