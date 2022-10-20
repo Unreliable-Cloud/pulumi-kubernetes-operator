@@ -8,12 +8,12 @@ spec:
       type: Secret
       secret:
         name: datadog-api-key
-        key: app-key
+        key: appKey
     DATADOG_API_KEY:
       type: Secret
       secret:
         name: datadog-api-key
-        key: api-key
+        key: apiKey
     AWS_SECRET_ACCESS_KEY:
       type: Secret
       secret:
