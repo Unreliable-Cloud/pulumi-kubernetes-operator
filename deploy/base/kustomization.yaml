@@ -6,10 +6,9 @@ namespace: pulumi-operator
 commonLabels:
   app: pulumi-operator
 
-patches:
-- path: patches/operator-resources.yaml
-  target:
-    kind: Deployment
+images:
+- name: pulumi/pulumi-kubernetes-operator
+  newName: docker.io/pulumi/pulumi-kubernetes-operator
 
 resources:
 - operator.yaml
