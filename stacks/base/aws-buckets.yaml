@@ -4,6 +4,16 @@ metadata:
   name: buckets
 spec:
   envRefs:
+    DATADOG_APP_KEY:
+      type: Secret
+      secret:
+        name: datadog-api-key
+        key: app-key
+    DATADOG_API_KEY:
+      type: Secret
+      secret:
+        name: datadog-api-key
+        key: api-key
     AWS_SECRET_ACCESS_KEY:
       type: Secret
       secret:
@@ -23,3 +33,4 @@ spec:
   projectRepo: https://github.com/Unreliable-Cloud/pulumi-aws-buckets
   branch: "refs/heads/master"
   destroyOnFinalize: true
+
