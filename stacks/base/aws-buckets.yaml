@@ -4,6 +4,16 @@ metadata:
   name: buckets
 spec:
   envRefs:
+    AWS_SECRET_ACCESS_KEY:
+      type: Secret
+      secret:
+        name: aws-credentials
+        key: aws_secret_access_key
+    AWS_ACCESS_KEY_ID:
+      type: Secret
+      secret:
+        name: aws-credentials
+        key: aws_access_key_id
     PULUMI_ACCESS_TOKEN:
       type: Secret
       secret:
