@@ -32,5 +32,5 @@ spec:
   stack: youvegotmoxie/buckets/us-east-1
   projectRepo: https://github.com/Unreliable-Cloud/pulumi-aws-buckets
   branch: "refs/heads/master"
-  destroyOnFinalize: true
+  destroyOnFinalize: false
 
